@@ -17,6 +17,7 @@ public class ShamrockGorolevichipDockerServiceModule extends ModuleLoader {
 
     public ShamrockGorolevichipDockerServiceModule () {
         super();
+        System.out.println("Test");
         packages(ShamrockGorolevichipDockerServiceModule.class.getPackageName());
     }
 }
