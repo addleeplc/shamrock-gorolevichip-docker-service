@@ -29,9 +29,9 @@ shamrock {
         snapshot = true
 
         ports {
-            app = 8181
-            debug = 8881
-            jmx = 58181
+            app = 8282
+            debug = 8982
+            jmx = 58282
         }
     }
     java {
@@ -113,7 +113,7 @@ configure(core_module) {
         compile(group: 'com.haulmont.monaco', name: 'monaco-graylog-reporter', version: "$monaco_version")
         compile(group: 'com.haulmont.monaco', name: 'monaco-sentry-reporter', version: "$monaco_version")
 
-
+        compile(group: 'com.haulmont.monaco', name: 'monaco-rs', version: "$monaco_version")
     }
 
     task deploy(dependsOn: assemble, type: ShamrockDeployJettyTask) {
